@@ -5,7 +5,7 @@ export default function SeletorTecno() {
   
     // 
     // A. Gestão de Estados
-
+        const [tecnologia,setTecnologia] = useState("")
 
     // 
     // B. Renderização de componentes
@@ -16,14 +16,16 @@ export default function SeletorTecno() {
             
             <select
                 className="bg-green-500 hover:bg-green-600 active:bg-green-700 hover:pointer text-white font-bold py-2 px-4 m-2 border border-green-700 rounded"
+                onChange={(e)=> setTecnologia(e.target.value)}
             >
                 <option value="">Selecione uma tecnologia</option>
                 <option value="HTML">HTML</option>
                 <option value="CSS">CSS</option>
                 <option value="JavaScript">JavaScript</option>
+                
             </select>
 
-            <p>Tecnologia escolhida:</p> 
+            <p>Tecnologia escolhida:{tecnologia}</p> 
         </section>
     )
 }

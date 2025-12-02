@@ -28,13 +28,13 @@ export default function HooksPage() {
 
             <Contador />
             
-            {/* <InputEcho /> */}
+            <InputEcho />
 
-            {/* <SeletorTecno /> */}
+            <SeletorTecno />
 
-            {/* <Tarefas /> */}
+            <Tarefas />
 
-            {/* <Tecnologias /> */}
+            <Tecnologias />
 
             {/* <FetchUser /> */}
 

@@ -5,13 +5,21 @@ export default function Tarefas() {
 
     //
     // A. Gestão de estados
+    // tarefas
     const [novaTarefa, setNovaTarefa] = useState<string>("")
-    // tarefas, lista de tarefas
+    //lista de tarefas
+    const [lista, setLista] = useState<string[]>([])
 
 
-    //
+    
     // B. event handlers (interação do utilizador)
-
+    function guadaNaLista(){  
+       
+       if (!novaTarefa) return
+        setLista([... lista, novaTarefa])
+        setNovaTarefa('')
+    
+    }
 
     //
     // C. renderização de componentes
@@ -27,20 +35,24 @@ export default function Tarefas() {
                 value={novaTarefa}
                 onChange={(e) => setNovaTarefa(e.target.value)}
             />
+            <p>Nova Tarefa:{novaTarefa}</p>
             <button
                 className="bg-green-500 hover:bg-green-600 active:bg-green-700 hover:pointer text-white font-bold py-2 px-4 m-2 border border-green-700 rounded"
-                // onClick = 
+                onClick ={guadaNaLista} 
             >
                 Adicionar
             </button>
 
+        
             
             <p>Lista de Tarefas:</p>
-            {/* 
+             
             <ul>
-                {tarefas.map((tarefa,index) => <li key={index}>{tarefa}</li> )}
+                {lista.map((tarefa,index) => (
+                    <li key={index}>{tarefa}</li> )
+                    )}
             </ul> 
-            */}
+            
         </section>
     )
 }
