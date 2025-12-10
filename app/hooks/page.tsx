@@ -5,7 +5,7 @@ import InputEcho from "@/components/InputEcho/InputEcho"
 import Produtos from "@/components/Produtos/Produtos"
 import SeletorTecno from "@/components/SeletorTecno/SeletorTecno"
 import Tarefas from "@/components/Tarefas/Tarefas"
-import Tecnologias from "@/components/Tecnologias/Tecnologias"
+import Tecnologias from "@/components/Tecnologia/Tecnologia"
 
 export default function HooksPage() {
 
