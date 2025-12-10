@@ -33,5 +33,10 @@ export interface User {
 export interface Produto {
     id: number
     title: string
+    price:number
+    description: string
     image: string
+    rating: number
+    rate:  number
+    count:  number
 }

@@ -7,7 +7,10 @@ export default function Header() {
             <nav className="flex gap-4">
                 <Link href="/" className="hover:underline">Intro</Link>
                 <Link href="/sobre" className="hover:underline">Sobre</Link>
+                <Link href="/Caracteristicas" className="hover:underline">Caracteristicas</Link>
+                <Link href="/Tecnologias" className="hover:underline">Tecnologias</Link>
                 <Link href="/hooks" className="hover:underline">Hooks</Link>
+                <Link href="/Produtos" className="hover:underline">Produtos</Link>
             </nav>
         </header>
     )
